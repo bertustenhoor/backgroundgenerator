@@ -5,26 +5,13 @@ var random = document.querySelector("#random");
 var css = document.querySelector("#css-property");
 var backGround = document.querySelector("#background");
 
+const colors = [color1, color2, color3];
 //set inital value of the colorpickers to the default background value + edit text of the css line
 setCSS();
 
-// input eventlisteners
-color1.addEventListener("input", function() {
-
-    setCSS();
-    
-})
-
-color2.addEventListener("input", function() {
-    
-    setCSS();
-
-})
-
-color3.addEventListener("input", function() {
-    
-    setCSS();
-
+//set eventlisteners
+colors.forEach(color => { 
+    color.addEventListener("input", () => setCSS()); 
 })
 
 random.addEventListener("click", function() {
