@@ -1,0 +1,41 @@
+body {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, yellow, red);
+}
+
+h1 {
+    font-weight: 600;
+    letter-spacing: 1.2em;
+    font-size: 3em;
+    mix-blend-mode:hard-light;
+}
+
+h2 {
+    font-weight: 400;
+    letter-spacing: 1.0em;
+    font-size: 2em;
+}
+
+.input {
+    min-width: 50px;
+    height: 50px;
+    margin: 24px;
+}
+
+.button {
+    border: 0;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: purple;
+    color: white;
+}
+
+.button-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
