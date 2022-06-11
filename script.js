@@ -1,5 +1,6 @@
 var color1 = document.getElementById("color1");
 var color2 = document.getElementById("color2");
+var color3 = document.getElementById('color3');
 var random = document.querySelector("#random");
 var css = document.querySelector("#css-property");
 var backGround = document.querySelector("#background");
@@ -20,10 +21,17 @@ color2.addEventListener("input", function() {
 
 })
 
+color3.addEventListener("input", function() {
+    
+    setCSS();
+
+})
+
 random.addEventListener("click", function() {
 
     color1.value = getRandomColor();
     color2.value = getRandomColor();
+    color3.value = getRandomColor();
 
     setCSS();
 
@@ -32,7 +40,7 @@ random.addEventListener("click", function() {
 //edit the css of the background and edit the css textline, all-in-one function
 function setCSS() {
     
-    backGround.style.setProperty("background", `linear-gradient(to right, ${color1.value}, ${color2.value})`);
+    backGround.style.setProperty("background", `linear-gradient(to right, ${color1.value}, ${color2.value}, ${color3.value})`);
 
     setCSStext();
 
@@ -40,7 +48,7 @@ function setCSS() {
 
 //setting element text to css line
 function setCSStext() {
-    css.textContent = `background: linear-gradient(to right, ${color1.value}, ${color2.value});`;
+    css.textContent = `background: linear-gradient(to right, ${color1.value}, ${color2.value}, ${color3.value});`;
 }
 
 function getRandomColor() {

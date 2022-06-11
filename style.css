@@ -1,7 +1,7 @@
 body {
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to right, yellow, red);
+    background: linear-gradient(to right, yellow, red, blue);
 }
 
 h1 {
